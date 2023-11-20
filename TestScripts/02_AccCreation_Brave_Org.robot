@@ -18,7 +18,7 @@ Entering A Account
     ClickUntil    New Account                 New
     UseModal      On
     TypeText      Phone                       7207207174
-    TypeText      Name                        tara siri Life Insurance4439
+    TypeText      Name                        tara siri Life Insurance7980
     TypeText      Website                     www.tvsh.com
     VerifyText    Additional Information
     PickList      Type                        Prospect
@@ -41,8 +41,8 @@ Entering A Account
     Log           ${AccMessage}
 
     ClickText     Details
-    VerifyText    tara siri Life Insurance4439
-    VerifyText    7207207174
+    VerifyText    tara siri Life Insurance7980
+    VerifyText    (720) 720-7174
     VerifyText    www.tvsh.com
 
     # End Account creation test case
