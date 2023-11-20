@@ -6,6 +6,8 @@ Resource                   ../ConnectResourcefiles/CuriousOrg_Connects.robot
 Suite Setup                Setup Browser
 Suite Teardown             End suite
 
+*** Variables ***
+${ContactMessage}        Hup! Contact created Successfully.
 
 *** Test Cases ***
 Entering a Contacts
@@ -48,6 +50,7 @@ Entering a Contacts
     TypeText               Description                 learning copado robotic testing
     ClickText              Save                        partial_match=False
     UseModal               Off
+    log                    ${ContactMessage}
     ClickText              Details
 
     # End creation of contacts
